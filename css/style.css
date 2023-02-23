@@ -12,10 +12,10 @@
   transition: 0.2s all ease-in-out;
   scroll-behavior: smooth;
 }
-h1,h2,h3,h4,h5,h6,button{
+/* h1,h2,h3,h4,h5,h6,button{
   font-family: "Poppins", sans-serif;
   
-}
+} */
 
 /* arrow */
 /* .uparrow {
@@ -94,9 +94,12 @@ h1,h2,h3,h4,h5,h6,button{
 }
 .header .right button {
   padding: 10px;
-  background-color: white;
-  border: 2px solid black;
+  color: white;
+  /* border: 2px solid black; */
   cursor: pointer;
+  /* background-color: rgb(219, 104, 50);
+   */
+   background: black;
 }
 .header .right button:hover {
   transform: translateX(10px);

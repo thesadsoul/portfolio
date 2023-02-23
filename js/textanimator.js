@@ -4,7 +4,7 @@ let txt = document.getElementById("text");
 // ADD CUSTOM WORD HERE
 // DONT CHANGE ANY COMMAS OR STYLING
 
-let data = ["Sudarshan Sharma", "A Developer...", "A Designer..."];
+let data = ["SUDARSHAN SHARMA", "A DEVELOPER...", "A DESIGNER..."];
 
 // END OF CHANGEABLE DATA
 
