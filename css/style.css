@@ -70,12 +70,14 @@
 }  */
 
 .header {
+  text-align: left;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 10vh;
   align-items: center;
   position: relative;
   overflow: hidden;
+  margin: 0px 10vw;
 }
 
 .header .left span {
@@ -405,6 +407,8 @@ section {
 /* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 880px) {
+
+
   .footer-distributed {
     font: bold 14px sans-serif;
   }
@@ -453,7 +457,5 @@ section {
   .header .mid {
     display: none;
   }
-  .header {
-    justify-content: space-around;
-  }
+
 }
