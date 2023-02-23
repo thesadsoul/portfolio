@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @font-face {
   font-family: "Fantasque";
-  src: url("/fonts/Fantasque.ttf");
+  src: url("../fonts/Fantasque.ttf");
 }
 * {
   margin: 0;
@@ -133,7 +133,7 @@ box-shadow: 6px 6px rgba(0, 0, 0, 0.603);
   background-repeat: no-repeat;
   background-size: cover;
   /* background-position: center bottom; */
-  background: url("/images/tss.jpg");
+  background: url("../images/tss.jpg");
 }
 
 .home span {
