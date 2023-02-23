@@ -1,8 +1,8 @@
 
 // change as per requirement
-let projects = 27;
-let clients = 12;
-let years = 4;
+let projects = 15;
+let clients = 09;
+let years = 05;
 // COLLETING PRO CLIENT AND YEARS ID
 let pro = document.getElementById("p");
 let cli = document.getElementById("c");
