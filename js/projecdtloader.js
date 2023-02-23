@@ -8,7 +8,6 @@ let pro = document.getElementById("p");
 let cli = document.getElementById("c");
 let year = document.getElementById("y");
 let loc = document.getElementById("project");
-let pulled = 0;
 
 async function sleep(seconds) {
     return new Promise(resolve => setTimeout(resolve, seconds * 1000));

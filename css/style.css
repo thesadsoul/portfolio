@@ -14,7 +14,7 @@
 }
 
 /* arrow */
-.uparrow {
+/* .uparrow {
   height: 5vh;
   aspect-ratio: 1;
   background: black;
@@ -27,6 +27,8 @@
   transition: 0.2s ease-in-out;
   border: 2px solid white;
   cursor: pointer;
+  display: none;
+  z-index: 100;
 }
 .uparrow:hover {
   border-radius: 100%;
@@ -34,7 +36,7 @@
 .uparrow a {
   text-decoration: none;
   color: white;
-}
+} */
 /* .ninja {
   width: 12.5vh;
   height: 9vh;
@@ -93,8 +95,8 @@
   cursor: pointer;
 }
 .header .right button:hover {
-transform: translateX(10px);
-box-shadow: 6px 6px rgba(0, 0, 0, 0.603);
+  transform: translateX(10px);
+  box-shadow: 6px 6px rgba(0, 0, 0, 0.603);
 }
 
 /* HOME */
@@ -164,7 +166,9 @@ box-shadow: 6px 6px rgba(0, 0, 0, 0.603);
   justify-content: space-around;
   align-items: center;
   color: white;
-  background: rgb(54, 54, 54);
+  /* background: rgb(54, 54, 54);
+   */
+  background: black;
   min-height: 15vh;
 }
 

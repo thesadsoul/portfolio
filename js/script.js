@@ -1,6 +1,7 @@
 data = [
   {
-    image: "https://cdn.discordapp.com/attachments/905020513104060416/1078279913561399376/image.png",
+    image:
+      "https://cdn.discordapp.com/attachments/905020513104060416/1078279913561399376/image.png",
     title: "TheSadSoul Portfolio Web",
     links: "https://github.com/thesadsoul/portfolio",
   },
@@ -34,5 +35,4 @@ function generate() {
     `;
   });
 }
-
 generate();
