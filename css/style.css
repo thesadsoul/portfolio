@@ -1,0 +1,448 @@
+/* POPPINS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@font-face {
+  font-family: "Fantasque";
+  src: url("/fonts/Fantasque.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Fantasque", sans-serif;
+  transition: 0.2s all ease-in-out;
+  scroll-behavior: smooth;
+}
+
+/* arrow */
+.uparrow {
+  height: 5vh;
+  aspect-ratio: 1;
+  background: black;
+  position: fixed;
+  bottom: 2.5vh;
+  right: 2.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+  border: 2px solid white;
+  cursor: pointer;
+}
+.uparrow:hover {
+  border-radius: 100%;
+}
+.uparrow a {
+  text-decoration: none;
+  color: white;
+}
+/* .ninja {
+  width: 12.5vh;
+  height: 9vh;
+
+  background: transparent;
+  position: absolute;
+  z-index: 1000;
+  top: 2vh;
+  animation: ninja 10s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  display: none;
+}
+.ninja img {
+  mix-blend-mode: luminosity;
+} 
+@keyframes ninja {
+  0% {
+    left: 10vw;
+    display: block;
+  }
+
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 150%;
+  }
+}  */
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  height: 10vh;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.header .left span {
+  color: crimson;
+}
+
+.header .mid a {
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+}
+
+.header .mid a:hover {
+  /* color: rgb(250, 164, 66); */
+  color: crimson;
+}
+.header .right button {
+  padding: 10px;
+  background-color: white;
+  border: 2px solid black;
+  cursor: pointer;
+}
+.header .right button:hover {
+transform: translateX(10px);
+box-shadow: 6px 6px rgba(0, 0, 0, 0.603);
+}
+
+/* HOME */
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 90vh;
+  align-items: center;
+}
+
+.home .lefty {
+  margin-left: 10vw;
+  height: 100%;
+}
+.home .lefty .upper {
+  padding-top: 15vh;
+}
+
+.home .lefty .upper button {
+  padding: 15px 25px;
+  background-color: rgb(219, 104, 50);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.home .lefty .upper button:hover {
+  transform: translateX(10px);
+  box-shadow: 6px 6px rgba(0, 0, 0, 0.603);
+}
+
+.home .righty {
+  height: 100%;
+  /* background-color: rgba(240, 184, 79, 0.329);
+   */
+  /* background: rgb(53, 52, 52); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center bottom; */
+  background: url("/images/tss.jpg");
+}
+
+.home span {
+  color: crimson;
+}
+.home .lefty .socials {
+  padding: 20px 20px 0px 0px;
+}
+.home .lefty .socials a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 10px 10px 10px;
+  margin-right: 10px;
+  font-size: large;
+  background: black;
+  aspect-ratio: 1;
+}
+
+.home .lefty {
+  border-top: 2px solid rgba(51, 51, 51, 0.199);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.home .lefty .lower .clients {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  background: rgb(54, 54, 54);
+  min-height: 15vh;
+}
+
+/* PROJECTS */
+.project-container {
+  min-height: 50vh;
+  padding: 0vw 10vw;
+}
+
+.projects {
+  padding-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+  gap: 25px;
+}
+.projects .blackbox {
+  aspect-ratio: 1;
+  /* background-color: black; */
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.projects .blackbox:hover #project-index {
+  top: 70%;
+  color: crimson;
+}
+.projects .blackbox #project-image {
+  aspect-ratio: 1;
+  width: 80%;
+  background: var(--img);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.projects .blackbox #project-index {
+  aspect-ratio: 1;
+  transition: 0.5s ease-in-out;
+  width: 20%;
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: -10%;
+  right: 10%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects .blackbox #project-name {
+  padding: 10px 0px;
+}
+
+/* CONTACT */
+section {
+  width: 100%;
+  display: inline-block;
+  background: #333;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-distributed {
+  background: rgb(0, 0, 0);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3 {
+  color: #ffffff;
+  /* font: normal 36px 'Open Sans', cursive; */
+  font-size: 32px;
+  margin: 0;
+}
+
+.footer-distributed h3 span {
+  color: lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #222;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  /* background-color:  #33383b; */
+  color: rgb(238, 139, 94);
+
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 400;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: lightseagreen;
+  text-decoration: none;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight: 300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+  .footer-center div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.logo {
+  height: 10vh;
+  width: 10vh;
+}
+
+@media (max-width: 660px) {
+  .projects {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin-left: 5vw;
+  }
+  .home .righty {
+    display: none;
+  }
+  .home .lefty {
+    margin-right: 5vw;
+  }
+  .home {
+    grid-template-columns: 1fr;
+  }
+  .header .mid {
+    display: none;
+  }
+  .header {
+    justify-content: space-around;
+  }
+}
